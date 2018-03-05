@@ -1,0 +1,54 @@
+.carousel,
+.carousel-inner,
+.carousel-inner>.item {
+    overflow: hidden;
+}
+
+.carousel-inner:before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 90%;
+    left: 0;
+    content: "";
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.carousel-inner:after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 90%;
+    content: "";
+    display: block;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.carousel-control.left,
+.carousel-control.right {
+    background: initial;
+    width: 10%;
+    color: #000;
+    z-index: 10;
+    top: -10px;
+}
+
+.carousel-caption {
+    position: relative;
+    left: auto;
+    right: auto;
+}
+
+.padding-ar {
+    padding: 0 5%;
+}
+
+.carousel-caption p,
+a {
+    color: black;
+     
+}

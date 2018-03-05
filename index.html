@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+
+    <!-- jQuery first, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 center-block">
+                <div class="carousel slide" id="myCarousel">
+                    <div class="carousel-inner">
+                        <div class="item active">
+                            <div class="col-xs-4">
+                                <a href="gallery.html">
+                                    <img src="//placehold.it/900x800?text=1" class="img-responsive padding-ar">
+                                    <div class="carousel-caption">
+                                        <h3>Paris</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, voluptate natus minima pariatur
+                                    dolorum, quisquam omnis inventore dicta sint beatae perspiciatis. Quisquam aut ipsam
+                                    dolores dolore corporis saepe sapiente asperiores?</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <img src="//placehold.it/900x800/CC3300?text=2" class="img-responsive padding-ar">
+                                    <div class="carousel-caption">
+                                        <h3>Paris</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores unde et, provident, maxime,
+                                    atque quisquam aliquam tempore quam harum quo quod nesciunt. Sequi porro earum voluptatibus,
+                                    perspiciatis itaque soluta repudiandae?</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <img src="//placehold.it/900x800/FFCC33?text=3" class="img-responsive padding-ar">
+                                    <div class="carousel-caption">
+                                        <h3>Paris</h3>
+                                </a>
+                                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam asperiores, quidem animi
+                                    accusantium ipsam quos eos provident, quae sit veritatis in corrupti numquam eligendi
+                                    amet aliquam? Excepturi illum unde hic?</p>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="col-xs-4">
+                                <a href="#">
+                                    <img src="//placehold.it/900x800/5500FF?text=4" class="img-responsive padding-ar">
+                                    <div class="carousel-caption">
+                                        <h3>Paris</h3>
+                                </a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat cupiditate iusto voluptate,
+                                    sed qui saepe non amet incidunt officiis fugit cum vero consectetur hic blanditiis impedit
+                                    quis et! Beatae, amet?</p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <i class="glyphicon glyphicon-chevron-left"></i>
+                    </a>
+                    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <i class="glyphicon glyphicon-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var elms = document.querySelectorAll(".carousel .item");
+            var toAppend = [];
+            for (var i = 0; i < elms.length; i++) {
+                var nextIndex = (i + 1) % elms.length;
+                var nextNextIndex = (i + 2) % elms.length;
+                toAppend.push([elms[nextIndex].firstElementChild.cloneNode(true), elms[nextNextIndex].firstElementChild
+                    .cloneNode(true)
+                ]);
+            }
+            console.log(j);
+            for (var j = 0; j < elms.length; j++) {
+                elms[j].appendChild(toAppend[j][0]);
+                elms[j].appendChild(toAppend[j][1]);
+            }
+        });
+    </script>
+   
+
+</body>
+
+</html> 
+
