@@ -1,3 +1,37 @@
+/* Css Edouard : Sitation / Background / About Me */
+.sitation{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.signature{
+    padding-right: 20%;
+    text-align: right;
+}
+
+
+.container-fluid{
+    padding: 0px;
+}
+
+.background_1{
+    height: 450px;
+    background: url("img/eiffel-tower-1784212_1920.jpg") no-repeat center fixed;
+}
+
+.about_me{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.background_2{
+    height: 450px;
+    background: url("img/louvre-817719_1920.jpg") no-repeat center fixed;
+}
+
+/* Css Daniel */
+
 .carousel,
 .carousel-inner,
 .carousel-inner>.item {
@@ -50,5 +84,5 @@
 .carousel-caption p,
 a {
     color: black;
-     
+
 }
